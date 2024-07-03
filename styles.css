@@ -1,0 +1,220 @@
+/*
+Author: Kristen Crowe
+Date: 7/3/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #F5F5DC; /* Beige */
+    font-family: "Roboto Slab", serif;
+    color: #333; /* Darker shade for text */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style rules for header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #2E4A22; /* Dark Green */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#header-content {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#header-content p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Enhancing navigation bar */
+nav {
+    background-color: #4D2600; /* Dark Brown */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Adding hover effect to nav links */
+nav li a:hover {
+    color: #A8C686; /* Light Green */
+}
+
+/* Hero section styling */
+#hero {
+    height: 400px;
+    margin-bottom: 20px;
+    background: url('../images/hero-image.jpg') no-repeat center center/cover;
+}
+
+/* Styling the main content */
+main {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light beige */
+}
+
+section#intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section#intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section#intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #A8C686; /* Light Green */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Enhancing footer */
+footer {
+    background-color: #2E4A22; /* Dark Green */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #A8C686; /* Light Green */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header-content h1 {
+        font-size: 2em;
+    }
+
+    #header-content p {
+        font-size: 1em;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav li a {
+        font-size: 1em;
+    }
+
+    section#intro h2 {
+        font-size: 1.5em;
+    }
+
+    section#intro p {
+        font-size: 1em;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #header-content h1 {
+        font-size: 1.5em;
+    }
+
+    #header-content p {
+        font-size: 0.9em;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
+
+    nav li a {
+        font-size: 0.9em;
+    }
+
+    section#intro h2 {
+        font-size: 1.2em;
+    }
+
+    section#intro p {
+        font-size: 0.9em;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
